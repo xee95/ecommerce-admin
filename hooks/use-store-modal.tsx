@@ -1,4 +1,6 @@
 import { create } from 'zustand';
+import { devtools, persist } from 'zustand/middleware';
+
 
 interface useStoreModalStore {
   isOpen: boolean;
@@ -11,3 +13,4 @@ export const useStoreModal = create<useStoreModalStore>((set) => ({
   onOpen: () => set({ isOpen: true }),
   onClose: () => set({ isOpen: false }),
 }));
+
