@@ -23,11 +23,11 @@ export function MainNav({
       label: 'Billboards',
       active: pathname === `/${params.storeId}/billboards`,
     },
-    // {
-    //   href: `/${params.storeId}/categories`,
-    //   label: 'Categories',
-    //   active: pathname === `/${params.storeId}/categories`,
-    // },
+    {
+      href: `/${params.storeId}/categories`,
+      label: 'Categories',
+      active: pathname === `/${params.storeId}/categories`,
+    },
     // {
     //   href: `/${params.storeId}/sizes`,
     //   label: 'Sizes',
