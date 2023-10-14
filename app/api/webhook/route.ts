@@ -60,7 +60,10 @@ export async function POST(req: Request) {
         },
       },
       data: {
-        isArchived: true
+        isArchived: false,
+        quantity : {
+          decrement: 1, // Decrement the quantity by 1
+        }, 
       }
     });
   }
